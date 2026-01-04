@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Money Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Money Management Bulanan</h2>
+
+<div class="card">
+  <label>Uang Bulanan</label>
+  <input type="number" id="uangBulanan">
+</div>
+
+<div class="card">
+  <h3>Catat Pengeluaran</h3>
+  <input type="text" id="namaPengeluaran" placeholder="Nama pengeluaran">
+  <input type="number" id="jumlahPengeluaran" placeholder="Jumlah">
+  <button onclick="tambahPengeluaran()">Tambah</button>
+</div>
+
+<div class="card">
+  <h3>Daftar Pengeluaran</h3>
+  <ul id="listPengeluaran"></ul>
+</div>
+
+<div class="card">
+  <h3>Ringkasan</h3>
+  <p>Total Pengeluaran: <span id="total">0</span></p>
+  <p>Sisa Uang: <span id="sisa">0</span></p>
+  <p>Status: <strong id="status">-</strong></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
